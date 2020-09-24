@@ -1,0 +1,226 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header
+{
+    width: 100%;
+    height: 200%;
+    background-color: white;
+    text-align: center;
+}
+.header ul{
+    list-style-type: none;
+}
+.header ul li{
+    display: inline;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 50px;
+    padding: 5%;
+}
+
+.belowheader1{
+    width: 100%;
+    height: 6px;
+    background-color: rgb(133, 29, 35)
+}
+.belowheader2{
+    width: 100%;
+    height: 6px;
+    background-color:rgb(3, 7, 8);
+}
+.belowheader3{
+    width: 100%;
+    height: 6px;
+    background-color: rgb(249, 124, 36)
+}
+
+
+.banner{
+    width: 100%;
+    height: 20%;
+    background-color:rgb(3, 7, 8);
+}
+.banner h1 {
+    font-size: 400%;
+    color:rgb(226, 229, 231);
+    font-weight: 1000;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.belowbanner1{
+    width: 100%;
+    height: 6px;
+    background-color: rgb(249, 124, 36)
+}
+.belowbanner2{
+    width: 100%;
+    height: 6px;
+    background-color:rgb(3, 7, 8);
+}
+.belowbanner3{
+    width: 100%;
+    height: 6px;
+    background-color: rgb(133, 29, 35)
+}
+
+.Quote
+{
+    background-color:rgb(3, 7, 8);
+    height: 70px;
+}
+.Quote h1
+{
+    color: rgb(226, 229, 231);
+    text-align: center;
+    font-style: italic;
+}
+.Quote h2
+{
+    color: rgb(226, 229, 231);
+    text-align: center;
+    margin-left: 20%;
+    font-size: 100%;
+}
+
+.Caption
+{
+    background-color:rgb(3, 7, 8);
+    height: 70px;
+}
+.Caption h1
+{
+    color:rgb(226, 229, 231);
+    text-align: center;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 50px;
+    padding: 20px;
+}
+
+.Quote h2
+{
+    color: rgb(226, 229, 231);
+    text-align: center;
+    margin-left: 20%;
+    font-size: 100%;
+}
+
+#JRE
+{
+    background-color:rgb(3, 7, 8);
+}
+#JRE img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#front
+{
+    background-color:rgb(3, 7, 8);
+}
+#front img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#Description
+{
+    background-color:rgb(3, 7, 8);
+    width: 100%;
+    height: 250px;
+}
+#Description ul{
+    list-style-type: none;
+}
+#Description ul li{
+    color:rgb(226, 229, 231);
+    text-align: center;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 50px;
+}
+
+#Nickname
+{
+    background-color:rgb(3, 7, 8);
+    width: 100%;
+    height: 100%;
+}
+#Nickname ul{
+    list-style-type: none;
+}
+#Nickname ul li{
+    color:rgb(226, 229, 231);
+    text-align: center;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 50px;
+}
+
+.strikethrough {
+    position: relative;
+  }
+.strikethrough:after {
+    content: "";
+    border-bottom: 0.125em solid red;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 50%;
+}
+
+#about{
+    background-color:rgb(3, 7, 8);
+    padding-bottom: 10%;
+}
+.listing
+{
+    background-color:rgb(3, 7, 8);
+}
+.listing table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listing table tr
+{
+    border: 20px;
+}
+.listing table tr td
+{
+
+    color:rgb(226, 229, 231);
+    text-align: center;
+    font-family: Copperplate, "Copperplate Gothic Light";
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 50px;
+    padding: 0 20px;
+    border: 3px solid rgb(226, 229, 231);
+}
+
+.tableImage
+{
+    width: 400px;
+    height: auto;
+}
+
+#smile
+{
+    background-color:rgb(3, 7, 8);
+}
+
