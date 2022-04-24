@@ -1,6 +1,5 @@
 import React from 'react'
-import Navsection from '../components/Header/Navsection'
-import "../Styles/About.css"
+import "../Styles/About.scss"
 import Header from "../components/Header"
 
 function About() {

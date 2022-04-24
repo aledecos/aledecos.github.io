@@ -16,11 +16,12 @@ $spacing-lg: 32px;
 $borderRadius: 12px;
 
 //header hight
-$headerHeight: 100px;
+$headerHeightDesktop: 150px;
+$headerHeightMobile: 60px;
 
 @mixin breakpoint($point){
     @if ($point == md){
-        @media (min-width: 48em){
+        @media (min-width: 870px){
             @content;
         }
     }

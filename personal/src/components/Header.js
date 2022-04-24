@@ -56,16 +56,13 @@ const Header = () => {
         <nav className={`${classes.header__content__nav} ${menuOpen  ? classes.isMenu : ""}`}>
           <ul>
             <li>
-              <a href='/'>Page 1</a>
+              <a href='/'>Home</a>
             </li>
             <li>
-              <a href='/'>Page 2</a>
-            </li>
-            <li>
-              <a href='/'>Page 3</a>
+              <a href='/About'>About</a>
             </li>
           </ul>
-          <button>CTA Page</button>
+          <button>Contact</button>
         </nav>
         <div className={classes.header__content__toggle}>
             {!menuOpen ? (

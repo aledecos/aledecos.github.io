@@ -5,13 +5,14 @@
     background: $dark;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     width: 100%;
-    height: $headerHeight;
+    height: $headerHeightMobile;
     padding: 0 1.5rem;
+    &.scroller{
+        background: none;
+        box-shadow: none;
+    }
     @include breakpoint(md) {
-        &.scroller{
-            background: none;
-            box-shadow: none;
-        }
+        height: $headerHeightDesktop;
         padding: 0 3rem;
     }
     transition: 0.3s ease all;
@@ -20,19 +21,25 @@
         overflow: visible;
         color: $light;
         margin: 0 auto;
-        max-width: 1920px;
+        max-width: 2200px;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
         z-index: 100;
+        @include breakpoint(md) {
+            height: 80%;
+        }
 
         &__logo{
-            font-size: 2rem;
+            font-size: 1rem;
             font-weight: bold;
             text-decoration: none;
             color: $light;
+            @include breakpoint(md) {
+                font-size: 2rem;
+            }
         }
 
         &__nav{
@@ -81,9 +88,10 @@
                         }
                     }
                     a{
+                        font-size: 1.2rem;
                         text-decoration: none;
                         color: inherit;
-                        padding: 0.75rem 1.25rem;
+                        padding: 1rem 2rem;
                         border-radius: $borderRadius;
                         transition: 0.3s ease all;
 
@@ -100,9 +108,9 @@
             button{
                 cursor: pointer;
                 outline: none;
-                padding: 0.75rem 1.25rem;
+                padding: 0.75rem 1.7rem;
                 border-radius: $borderRadius;
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-family: inherit;
                 background: $primary;
                 color: $dark;
