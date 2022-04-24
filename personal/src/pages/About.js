@@ -12,6 +12,41 @@ function About() {
                     Welcome
             </div>
         </section>
+        <section className="aboutus">
+            <div className="title">
+                    Welcome
+            </div>
+        </section>
+        <section className="aboutus">
+            <div className="title">
+                    Welcome
+            </div>
+        </section>
+        <section className="aboutus">
+            <div className="title">
+                    Welcome
+            </div>
+        </section>
+        <section className="aboutus">
+            <div className="title">
+                    Welcome
+            </div>
+        </section>
+        <section className="aboutus">
+            <div className="title">
+                    Welcome
+            </div>
+        </section>
+        <section className="aboutus">
+            <div className="title">
+                    Welcome
+            </div>
+        </section>
+        <section className="aboutus">
+            <div className="title">
+                    Welcome
+            </div>
+        </section>
         
   
 

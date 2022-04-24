@@ -6,6 +6,7 @@ import {AiOutlineClose} from "react-icons/ai"
 const Header = () => {
   
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollTop, setscrollTop] = useState(true);
   const [size, setSize] = useState({
     width: undefined,
     height: undefined,
@@ -25,6 +26,20 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
+    let listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop
+      if (scrolled >= 120) {
+        if (scrollTop !== false) setscrollTop(false)
+      } else {
+        if (scrollTop !== true) setscrollTop(true)
+      }
+    })
+    return () => {
+      document.removeEventListener("scroll", listener)
+    }
+  }, [scrollTop]);
+
+  useEffect(() => {
       if (size.width > 768 && menuOpen) {
           setMenuOpen(false);
       }
@@ -35,7 +50,7 @@ const Header = () => {
   };
 
   return (
-    <header className={classes.header}>
+    <header className={`${classes.header} ${scrollTop ? classes.scroller : ""}`}>
       <div className={classes.header__content}>
         <h2 className={classes.header__content__logo}>Joseph Park</h2>
         <nav className={`${classes.header__content__nav} ${menuOpen  ? classes.isMenu : ""}`}>

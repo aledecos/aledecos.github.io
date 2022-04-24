@@ -1,17 +1,23 @@
 @import './../Styles/variables.scss';
 
 .header{
+    position: fixed;
     background: $dark;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     width: 100%;
     height: $headerHeight;
     padding: 0 1.5rem;
     @include breakpoint(md) {
+        &.scroller{
+            background: none;
+            box-shadow: none;
+        }
         padding: 0 3rem;
     }
     transition: 0.3s ease all;
 
     &__content{
-        overflow: hidden;
+        overflow: visible;
         color: $light;
         margin: 0 auto;
         max-width: 1920px;
