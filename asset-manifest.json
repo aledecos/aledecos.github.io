@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.699e5fd3.css",
-    "main.js": "/static/js/main.19f6f5c9.js",
+    "main.css": "/static/css/main.baa08229.css",
+    "main.js": "/static/js/main.30315513.js",
     "static/media/aboutplaceholder.jpg": "/static/media/aboutplaceholder.f9d1d13b4168830698c9.jpg",
     "static/media/schulich.png": "/static/media/schulich.4c60c75437d66d4cd574.png",
     "static/media/linkedInLogo.png": "/static/media/linkedInLogo.ba884e1f9ad4362348c1.png",
     "static/media/guyHoldingPaper.svg": "/static/media/guyHoldingPaper.c4ae83f45d4be76c3abafbf56593d960.svg",
     "index.html": "/index.html",
-    "main.699e5fd3.css.map": "/static/css/main.699e5fd3.css.map",
-    "main.19f6f5c9.js.map": "/static/js/main.19f6f5c9.js.map"
+    "main.baa08229.css.map": "/static/css/main.baa08229.css.map",
+    "main.30315513.js.map": "/static/js/main.30315513.js.map"
   },
   "entrypoints": [
-    "static/css/main.699e5fd3.css",
-    "static/js/main.19f6f5c9.js"
+    "static/css/main.baa08229.css",
+    "static/js/main.30315513.js"
   ]
 }
