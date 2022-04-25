@@ -26,7 +26,7 @@ const Header = () => {
 
       return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+  //scroll to top header lookout
   useEffect(() => {
     let listener = document.addEventListener("scroll", e => {
       let scrolled = document.scrollingElement.scrollTop;
@@ -51,9 +51,16 @@ const Header = () => {
     }
   }, [scrollTop, size]);
 
+  //setting menu on and off && disable scroll while menu is up
   useEffect(() => {
-      if (size.width > 768 && menuOpen) {
+      if (size.width > 800 && menuOpen) {
           setMenuOpen(false);
+      }
+      if(menuOpen)
+      {
+        document.body.style.overflow = "hidden"
+      }else{
+        document.body.style.overflow = "scroll"
       }
   }, [size.width, menuOpen]);
 
@@ -69,10 +76,10 @@ const Header = () => {
         <nav className={`${classes.header__content__nav} ${menuOpen  ? classes.isMenu : ""}`}>
           <ul>
             <li>
-              <Link to="/#top">Back to Top</Link>
+              <Link to="/#top" onClick={() => setMenuOpen(false)}>Back to Top</Link>
             </li>
             <li>
-              <Link to="/#about">About</Link>
+              <Link to="/#about" onClick={() => setMenuOpen(false)}>About</Link>
             </li>
           </ul>
           <button>Contact</button>
