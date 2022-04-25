@@ -4,7 +4,7 @@ import linkedinLogo from './../../Resources/linkedInLogo.png';
 
 const Welcome = () => {
   return (
-    <section className={classes.section}>
+    <section className={classes.section} id="top">
         <div className={classes.section__title}>
                 <h1>
                     Welcome

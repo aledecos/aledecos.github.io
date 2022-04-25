@@ -11,7 +11,9 @@
     padding: 0 1.5rem;
     z-index: 999;
     color: $dark;
+    transition: 0.3s ease all;
     &.scroller{
+        transition: 0.75s ease all;
         background: none;
         box-shadow: none;
         color: $light;
@@ -20,7 +22,7 @@
         height: $headerHeightDesktop;
         padding: 0 3rem;
     }
-    transition: 0.5s ease all;
+    
 
     &__content{
         overflow: visible;
@@ -134,6 +136,7 @@
 
             &.isMenu{
                 transform: translate(100%, 0%);
+                color: $light;
             }
         }
 

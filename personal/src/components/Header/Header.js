@@ -2,6 +2,8 @@ import {React, useState, useEffect} from 'react';
 import classes from './Header.module.scss';
 import {BiMenuAltRight} from "react-icons/bi";
 import {AiOutlineClose} from "react-icons/ai"
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Header = () => {
   
@@ -27,17 +29,27 @@ const Header = () => {
 
   useEffect(() => {
     let listener = document.addEventListener("scroll", e => {
-      var scrolled = document.scrollingElement.scrollTop
-      if (scrolled >= 120) {
-        if (scrollTop !== false){setscrollTop(false); console.log();} 
-      } else {
-        if (scrollTop !== true){setscrollTop(true); console.log();}
+      let scrolled = document.scrollingElement.scrollTop;
+      if(size.width >= 800)
+      {
+        if (scrolled >= 500) {
+          if (scrollTop !== false){setscrollTop(false); console.log();} 
+        } else {
+          if (scrollTop !== true){setscrollTop(true); console.log();}
+        }
+      }else{
+        if (scrolled >= 100) {
+          if (scrollTop !== false){setscrollTop(false); console.log();} 
+        } else {
+          if (scrollTop !== true){setscrollTop(true); console.log();}
+        }
       }
+      
     })
     return () => {
       document.removeEventListener("scroll", listener)
     }
-  }, [scrollTop]);
+  }, [scrollTop, size]);
 
   useEffect(() => {
       if (size.width > 768 && menuOpen) {
@@ -57,10 +69,10 @@ const Header = () => {
         <nav className={`${classes.header__content__nav} ${menuOpen  ? classes.isMenu : ""}`}>
           <ul>
             <li>
-              <a href='/'>Home</a>
+              <Link to="/#top">Back to Top</Link>
             </li>
             <li>
-              <a href='/About'>About</a>
+              <Link to="/#about">About</Link>
             </li>
           </ul>
           <button>Contact</button>

@@ -18,7 +18,7 @@ $textOrientMobile: 'col1' 'col2';
         margin-left: auto;
         width: 100%;
         max-width: 2000px;
-        height: 230px;
+      
 
         @include breakpoint(md) {
             height: 900px;
@@ -31,33 +31,74 @@ $textOrientMobile: 'col1' 'col2';
         
             &__textWrapper{
                 padding-top: 0;
-                
                 h1{
                     text-align: center;
-                    padding-bottom: 20px;
-                    font-size: 2rem;
+                    padding-top: 50px;
+                    padding-bottom: 40px;
+                    font-size: 2.5rem;
                     @include breakpoint(md) {
-                        text-align: none;
+                        text-align: left;
                         padding-bottom: 60px;
                         font-size: 5rem;
                     }
                 }
-                span{
-                    font-size: 1.3rem;
-                    letter-spacing: 1.4px;
-                    text-transform: uppercase;
-                    padding: 0 6rem;
-                    &.first{
-                        padding: 0 5rem 0 0;
-                        border-right: 3px solid $dark;
+                &__spanWrapper{
+                    text-align: center;
+                    @include breakpoint(md) {
+                        text-align: left;
                     }
-                    &.last{
-                        border-left: 3px solid $dark;
+                    span{
+                        font-size: 0.94rem;
+                        text-transform: uppercase;
+                        padding: 0 3rem;
+                        &.first{
+                            border-right: 2px solid $dark;
+                        }
+                        &.last{
+                            border-left: 2px solid $dark;
+                        }
+                        @include breakpoint(md) {
+                            font-size: 1.3rem;
+                            letter-spacing: 1.4px;
+                            text-transform: uppercase;
+                            padding: 0 6rem;
+                            &.first{
+                                padding: 0 5rem 0 0;
+                                border-right: 3px solid $dark;
+                            }
+                            &.last{
+                                border-left: 3px solid $dark;
+                            }
+                        }
                     }
                 }
+                
                 p{
                     font-size: 1.3rem;
-                    padding-top: 100px;
+                    margin: 50px 40px;
+                    @include breakpoint(md) {
+                        font-size: 1.3rem;
+                        margin: 0 0;
+                        padding-top: 100px;
+                    }
+                }
+            }
+            &__imgWrapper{
+                
+                padding-bottom: 50px;
+                @include breakpoint(md) {
+                    padding-top: 30px;
+                }
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    min-width: 100px;
+                    max-width: 40%;
+                    
+                    @include breakpoint(md) {
+                        float: right;
+
+                    }
                 }
             }
         }
@@ -69,8 +110,13 @@ $textOrientMobile: 'col1' 'col2';
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
-                    min-width: 300px;
-                    max-width: 100%;
+                    min-width: 100px;
+                    max-width: 40%;
+                    
+                    @include breakpoint(md) {
+                        min-width: 150px;
+                        max-width: 100%;
+                    }
                     
                 }
                 
