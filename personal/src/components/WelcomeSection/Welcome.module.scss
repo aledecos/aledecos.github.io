@@ -1,0 +1,78 @@
+@import './../../Styles/variables.scss';
+
+
+.section {
+    background-image: url("./../../Resources/aboutplaceholder.jpg");
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include breakpoint(md) {
+        height: 900px;
+        padding: 0 3rem;
+    }
+
+    &__title{
+        font-size: 2rem;
+        color: $light;
+        line-height: 48px;
+        padding-top: 70px;
+        @include breakpoint(md) {
+            font-size: 8rem;
+            line-height: 200px;
+            padding-top: 200px;
+        }
+
+        span{
+            cursor: pointer;
+            font-size: 0.55rem;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0.5em 1em;
+            letter-spacing: 0.5px;
+
+            @include breakpoint(md) {
+                font-size: 1.3rem;
+                padding: 0.5em 2em;
+                letter-spacing: 2px;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                padding: 0.5em 2em;
+                @include breakpoint(md) {
+                    padding: 0.7em 3.5em;
+                }
+                &.primary{
+                    border: 1px solid #fff;
+                }
+                &.secondary{
+                    border: 1px solid #044ccd;
+                    background: #044ccd;
+                    display: inline;
+                    img{
+                        position: relative;
+                        top: 0.155rem;
+                        right: 0.6rem;
+                        height: 10.3px;
+                        width: 10.3px;
+                        @include breakpoint(md) {
+                            top: 0.3rem;
+                            right: 1rem;
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+
+}
+
+

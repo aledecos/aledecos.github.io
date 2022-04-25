@@ -1,21 +1,15 @@
 import * as React from "react";
-import {BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-
-
+import {Routes, Route, Navigate } from "react-router-dom";
+import Layout from "./pages/layout";
 
 function App() {
   return (
-    <BrowserRouter>
-        <Header/>
+    <>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="about" element={<div>hello</div>}/>
-          <Route path="contact" element={<div>hello</div>}/>
+          <Route path="/" element={<Layout/>}/>
           <Route path="*" element={<Navigate replace to="/"/>}/> 
         </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
