@@ -29,9 +29,9 @@ const Header = () => {
     let listener = document.addEventListener("scroll", e => {
       var scrolled = document.scrollingElement.scrollTop
       if (scrolled >= 120) {
-        if (scrollTop !== false) setscrollTop(false)
+        if (scrollTop !== false){setscrollTop(false); console.log();} 
       } else {
-        if (scrollTop !== true) setscrollTop(true)
+        if (scrollTop !== true){setscrollTop(true); console.log();}
       }
     })
     return () => {
@@ -51,6 +51,7 @@ const Header = () => {
 
   return (
     <header className={`${classes.header} ${scrollTop ? classes.scroller : ""}`}>
+      <meta content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'></meta>
       <div className={classes.header__content}>
         <h2 className={classes.header__content__logo}>Joseph Park</h2>
         <nav className={`${classes.header__content__nav} ${menuOpen  ? classes.isMenu : ""}`}>

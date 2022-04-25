@@ -1,2 +1,81 @@
 @import './../../Styles/variables.scss';
 
+$textOrientDesktop: 'col1 col2';
+$textOrientMobile: 'col1' 'col2';
+
+//value of pic color #3038C5
+
+.section{
+    color: $dark;
+    background: $light;
+    
+    &__wrapper{
+        display: grid;
+        grid-auto-columns: minmax(auto, 1fr);
+        grid-template-areas: $textOrientMobile;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        max-width: 2000px;
+        height: 230px;
+
+        @include breakpoint(md) {
+            height: 900px;
+            padding: 170px 120px;
+            grid-template-areas: $textOrientDesktop;
+        }
+
+        &__column1{
+            grid-area: col1;
+        
+            &__textWrapper{
+                padding-top: 0;
+                
+                h1{
+                    text-align: center;
+                    padding-bottom: 20px;
+                    font-size: 2rem;
+                    @include breakpoint(md) {
+                        text-align: none;
+                        padding-bottom: 60px;
+                        font-size: 5rem;
+                    }
+                }
+                span{
+                    font-size: 1.3rem;
+                    letter-spacing: 1.4px;
+                    text-transform: uppercase;
+                    padding: 0 6rem;
+                    &.first{
+                        padding: 0 5rem 0 0;
+                        border-right: 3px solid $dark;
+                    }
+                    &.last{
+                        border-left: 3px solid $dark;
+                    }
+                }
+                p{
+                    font-size: 1.3rem;
+                    padding-top: 100px;
+                }
+            }
+        }
+        &__column2{
+            grid-area: col2;
+            &__imgWrapper{
+
+                img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    min-width: 300px;
+                    max-width: 100%;
+                    
+                }
+                
+            }
+        }
+
+    }
+}

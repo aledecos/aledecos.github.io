@@ -7,12 +7,8 @@ const layout = () => {
   return (
     <>
         <Header/>
-        <section>
-            <Welcome/>
-        </section>
-        <section>
-            <About/>
-        </section>
+        <Welcome/>
+        <About/>
     </>
     
   )
