@@ -2,6 +2,9 @@ import React from 'react'
 import Welcome from '../components/WelcomeSection/Welcome';
 import Header from '../components/Header/Header';
 import About from '../components/AboutSection/About';
+import Interests from '../components/Interests/Interests';
+import Experience from '../components/Experience/Experience';
+import Footer from '../components/Footer/Footer';
 
 const layout = () => {
   return (
@@ -9,8 +12,9 @@ const layout = () => {
         <Header/>
         <Welcome/>
         <About />
-        <About/>
-        <About/>
+        <Interests/>
+        <Experience/>
+        <Footer/>
     </>
     
   )

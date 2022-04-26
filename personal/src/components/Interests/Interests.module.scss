@@ -1,13 +1,13 @@
 @import './../../Styles/variables.scss';
 
-$textOrientDesktop: 'col1 col2';
+$textOrientDesktop: 'col2 col1';
 $textOrientMobile: 'col1' 'col2';
 
 //value of pic color #3038C5
 
 .section{
-    color: $dark;
-    background: $light;
+    color: $light;
+    background: $dark;
     
     &__wrapper{
         display: grid;
@@ -31,8 +31,8 @@ $textOrientMobile: 'col1' 'col2';
         
             &__textWrapper{
                 padding-top: 0;
+                
                 h1{
-                    white-space:nowrap;
                     text-align: center;
                     padding-top: 50px;
                     padding-bottom: 40px;
@@ -48,31 +48,30 @@ $textOrientMobile: 'col1' 'col2';
                     display: flex;
                     justify-content: center;
                     @include breakpoint(md) {
-                        text-align: left;
                         justify-content: left;
+                        text-align: left;
                     }
                     span{
                         font-size: 0.7rem;
                         text-transform: uppercase;
-                        padding: 0 1rem;
+                        padding: 0 1.5rem;
                         &.first{
-                            padding-left: 2.5rem;
-                            border-right: 2px solid $dark;
+                            border-right: 2px solid $light;
                         }
                         &.last{
-                            border-left: 2px solid $dark;
+                            border-left: 2px solid $light;
                         }
                         @include breakpoint(md) {
                             font-size: 1rem;
-                            float: left;
+                            letter-spacing: 1.4px;
                             text-transform: uppercase;
-                            padding: 0 4rem;
+                            padding: 0 3rem;
                             &.first{
-                                padding: 0 4rem 0 0;
-                                border-right: 3px solid $dark;
+                                padding: 0 3rem 0 0;
+                                border-right: 3px solid $light;
                             }
                             &.last{
-                                border-left: 3px solid $dark;
+                                border-left: 3px solid $light;
                             }
                         }
                     }
@@ -98,7 +97,7 @@ $textOrientMobile: 'col1' 'col2';
                     display: block;
                     margin: 0 auto;
                     min-width: 100px;
-                    max-width: 40%;
+                    max-width: 25%;
                     
                     @include breakpoint(md) {
                         float: right;
@@ -116,7 +115,7 @@ $textOrientMobile: 'col1' 'col2';
                     margin-left: auto;
                     margin-right: auto;
                     min-width: 100px;
-                    max-width: 40%;
+                    max-width: 50%;
                     
                     @include breakpoint(md) {
                         min-width: 150px;

@@ -1,0 +1,18 @@
+@import './../../Styles/variables.scss';
+
+.section{
+    &__title{
+        text-align: center;
+        h1{
+            padding-top: 50px;
+            padding-bottom: 40px;
+            font-size: 2.5rem;
+            @include breakpoint(md) {
+                padding-top: 150px;
+                text-align: center;
+                font-size: 5rem;
+            }
+        }
+    }
+
+}

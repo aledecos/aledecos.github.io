@@ -76,13 +76,21 @@ const Header = () => {
         <nav className={`${classes.header__content__nav} ${menuOpen  ? classes.isMenu : ""}`}>
           <ul>
             <li>
-              <Link to="/#top" onClick={() => setMenuOpen(false)}>Back to Top</Link>
+              <Link to="/#top" onClick={() => setMenuOpen(false)}>Beginning</Link>
             </li>
             <li>
               <Link to="/#about" onClick={() => setMenuOpen(false)}>About</Link>
             </li>
+            <li>
+              <Link to="/#Knowledge" onClick={() => setMenuOpen(false)}>Knowledge</Link>
+            </li>
+            <li>
+              <Link to="/#experience" onClick={() => setMenuOpen(false)}>Experience</Link>
+            </li>
+            <li>
+              <Link to="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+            </li>
           </ul>
-          <button>Contact</button>
         </nav>
         <div className={classes.header__content__toggle}>
             {!menuOpen ? (
