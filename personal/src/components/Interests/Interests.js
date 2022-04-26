@@ -15,7 +15,7 @@ const Interests = () => {
                         <span>Backend</span>
                         <span className={classes.last}>Development</span>
                     </div>
-                    <p>I have experience in ReactJs  NodeJs  ExpressJs, Javascript, CSS, Sass, Java, Python <br/> I am familiar with R, C#</p>
+                    <p>I have experience in ReactJs, NodeJs, ExpressJs, Javascript, CSS, Sass, Java, Python <br/> I am familiar with R, C#</p>
                 </div>
                 <div className={classes.section__wrapper__column1__imgWrapper}>
                     <img src={react} alt='react'/>
