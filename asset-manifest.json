@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a0432c94.css",
-    "main.js": "/static/js/main.5ffb9691.js",
+    "main.js": "/static/js/main.b86076d7.js",
     "static/media/aboutplaceholder.jpg": "/static/media/aboutplaceholder.f9d1d13b4168830698c9.jpg",
     "static/media/schulich.png": "/static/media/schulich.4c60c75437d66d4cd574.png",
     "static/media/reacticon.png": "/static/media/reacticon.428839d4924b447d4d50.png",
@@ -11,10 +11,10 @@
     "static/media/guyHoldingPaper.svg": "/static/media/guyHoldingPaper.c4ae83f45d4be76c3abafbf56593d960.svg",
     "index.html": "/index.html",
     "main.a0432c94.css.map": "/static/css/main.a0432c94.css.map",
-    "main.5ffb9691.js.map": "/static/js/main.5ffb9691.js.map"
+    "main.b86076d7.js.map": "/static/js/main.b86076d7.js.map"
   },
   "entrypoints": [
     "static/css/main.a0432c94.css",
-    "static/js/main.5ffb9691.js"
+    "static/js/main.b86076d7.js"
   ]
 }
